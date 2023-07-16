@@ -18,3 +18,14 @@ app.get("/api/recipes/:id", async (req, res) => {
 app.listen(3001, () => {
   console.log("Server is running on port 3000");
 });
+
+app.use((req, res, next) => {
+  res.set({
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Headers":
+      "'Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token'",
+  });
+
+  next();
+});
