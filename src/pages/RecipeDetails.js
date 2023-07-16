@@ -19,7 +19,7 @@ export const RecipeDetails = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://api.edamam.com/api/recipes/v2/${params.id}?type=public&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`
+          `/api/recipes/v2/${params.id}?type=public&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`
         );
 
         if (!response.ok) {
