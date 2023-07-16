@@ -1,0 +1,24 @@
+.subheader-banner {
+  background-image: url("../../assets/Header-Images/bannerbackground-blur.png");
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contactheader-banner {
+  background-image: url("../../assets/Header-Images/contact-banner-blur.png");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-carousel-box {
+  width: 100%;
+  height: 100%;
+}
+
+.murk-header-padding-top{
+  padding-top: 120px;
+}
